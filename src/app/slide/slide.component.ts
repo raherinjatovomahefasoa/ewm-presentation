@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Reveal from 'reveal.js';
+import { Name } from '../interfaces/name';
 // import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
 
 interface StressPattern {
@@ -12,11 +13,6 @@ interface StressCompare {
   phonetics1: string;
   word2: string;
   phonetics2: string;
-}
-interface Name {
-  name: string;
-  phonetics: string;
-  gender: string;
 }
 
 @Component({

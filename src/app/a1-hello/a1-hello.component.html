@@ -1,0 +1,122 @@
+<textarea class="d-none" id="ewm_names">
+    Henry | /ˈhɛnri/ | male
+    Lisa | /ˈlisə/ | female
+    Liz | /lɪz/ | female
+    Maria | /məˈriə/ | female
+    Tony | /ˈtoʊni/ | male
+    Tom | /tɑm/ | male
+    Sam | /sæm/ | unisex
+    Andy | /ˈændi/ | unisex
+    Jessica | /ˈdʒɛsəkə/ | female
+    Steve | /stiv/ | male
+    Linda | /ˈlɪndə/ | female
+    Max | /mæks/ | male
+    Anna | /ˈænə/ | female
+    Jones | /dʒoʊnz/ | male
+    Carlos | /ˈkɑrloʊs/ | male
+    Gomez | /ˈɡoʊmɛz/ | male
+    Ben | /bɛn/ | male
+    Rob | /rɑb/ | male
+    Peter | /ˈpitər/ | male
+    Wilson | /ˈwɪlsən/ | male
+    Silva | /ˈsɪlvə/ | male
+    Miranda | /məˈrændə/ | female
+    Mei | /meɪ/ | female
+    Ling | /lɪŋ/
+    Rosa | /ˈroʊzə/ | female
+    Matt | /mæt/ | male
+    Mike | /maɪk/ | male
+    Paolo | /ˈpaʊloʊ/ | male
+    Rivera | /riˈvɛrə/ | male
+</textarea>
+<textarea class="d-none" id="ewm_numbers">
+    zero | /ˈzɪroʊ/
+    oh | /oʊ/
+    one | /wʌn/
+    two | /tu/
+    three | /θri/
+    four | /fɔr/
+    five | /faɪv/
+    six | /sɪks/
+    seven | /ˈsɛvən/
+    eight | /eɪt/
+    nine | /naɪn/
+    ten | /tɛn/
+</textarea>
+<textarea class="d-none" id="ewm_days">
+    Monday | /ˈmʌndeɪ/
+    Tuesday | /ˈtuzdeɪ/
+    Wednesday | /ˈwɛnzdeɪ/
+    Thursday | /ˈθərzdeɪ/
+    Friday | /ˈfraɪdeɪ/
+    Saturday | /ˈsætərdeɪ/
+    Sunday | /ˈsʌndeɪ/
+</textarea>
+<textarea name="" id="" cols="30" rows="10">
+a_class | /ə klæs/
+a_number | /ə ˈnʌmbər/
+a_student | /ə ˈstjuːdənt/
+a_room | /ə rum/
+I | /aɪ/
+you | /ju/
+my | /maɪ/
+to be | /tu bi/
+in | /ɪn/
+yes | /jɛs/
+no | /noʊ/
+</textarea>
+
+<div class="reveal">
+    <div class="slides">
+        <!-- names -->
+        <!-- <section><h1>Names</h1></section>
+        <section *ngFor="let line of names">
+            <section>
+                <div class="fragment">{{line.name}}</div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div>{{line.phonetics}}</div>
+                    <button class="mx-3"  data-fragment-index="5" (click)="listen(line.name)">Listen</button>
+                </div>
+                 <audio [id]="line.name" class="mx-4" src="{{files}}ewm_v_{{line.name}}.mp3"></audio>
+            </section>
+            <section>
+              <img *ngIf="line.gender == 'female'" src="{{files}}ewm_v_female.jpg" alt="">
+              <img *ngIf="line.gender == 'male'" src="{{files}}ewm_v_male.jpg" alt="">
+              <img *ngIf="line.gender == 'unisex'" src="{{files}}ewm_v_unisex.jpg" alt="">
+            </section>
+        </section> -->
+        
+        <!-- numbers -->
+        <section><h1>Numbers</h1></section>
+        <section *ngFor="let line of numbers">
+            <section>
+                <div class="fragment capitalize">{{line.word | underscoreToSpace}}</div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div>{{line.phonetics}}</div>
+                    <button class="mx-3"  data-fragment-index="5" (click)="listen(line.word)">Listen</button>
+                </div>
+                <audio [id]="line.word" class="mx-4" src="{{files}}ewm_v_{{line.word}}.mp3"></audio>
+            </section>
+            <section>
+              <img src="{{files}}ewm_v_{{line.word}}.jpg" alt="">
+            </section>
+        </section>  
+        
+        <!-- Days of the week -->
+        <!-- numbers -->
+        <section><h1>Days</h1></section>
+        <section *ngFor="let line of days">
+            <section>
+                <div class="fragment capitalize">{{line.word | underscoreToSpace}}</div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div>{{line.phonetics}}</div>
+                    <button class="mx-3"  data-fragment-index="5" (click)="listen(line.word)">Listen</button>
+                </div>
+                <audio [id]="line.word" class="mx-4" src="{{files}}ewm_v_{{line.word}}.mp3"></audio>
+            </section>
+            <section>
+              <img src="{{files}}ewm_v_{{line.word}}.jpg" alt="">
+            </section>
+        </section>  
+    </div>
+</div>

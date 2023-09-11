@@ -2,3 +2,18 @@
   display: none;
 }
 @import 'node_modules/bootstrap/dist/css/bootstrap-utilities.min.css';
+.reveal section p {
+  font-size: 80px !important;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.reveal section div {
+  font-size: 80px !important;
+}
+.d-none {
+  display: none !important;
+}
+.no-wrap {
+  white-space: nowrap !important;
+}
