@@ -1,24 +1,191 @@
 <div class="reveal">
+    <textarea class="d-none" id="data1" cols="30" rows="10">/01/ | machine | /məˈʃin/
+/100/ | vegetable | /ˈvɛdʒtəbəl/
+/010/ | diploma | /dəˈpləʊmə/
+/21/ | translate | /ˌtrænsˈleɪt/
+/102/ | crocodile | /ˈkrɑkəˌdaɪl/
+/201/ | understand | /ˌʌndərˈstænd/</textarea>
+    <textarea class="d-none" id="data2" cols="30" rows="10">
+pervert(n.) | /ˈpərvərt/ | pervert(v.) | /pərˈvərt/
+produce(n.) | /ˈprɑˌdus/ | produce(v.) | /prəˈdus/
+black_board | /ˌblækˈbɔrd/ | blackboard | /ˈblækˌbɔrd/
+    </textarea>
+    <textarea class="d-none" id="data3" cols="30" rows="10">
+Henry | /ˈhɛnri/ | male
+Lisa | /ˈlisa/ | female
+Maria | /məˈriə/ | female
+Tony | /ˈtoʊni/ | male
+Tom | /tɑm/ | male
+Sam | /sæm/ | unisex
+Andy | /ˈændi/ | unisex
+Jessica | /ˈdʒɛsɪkə/ | female
+Steve | /stiv/ | male
+Linda | /ˈlɪndə/ | female
+Max | /mæks/ | male
+Anna | /ˈænə/ | female
+Jones | /dʒoʊnz/ | male
+Carlos | /ˈkɑrloʊs/ | male
+Gomez | /ˈɡoʊmɛz/ | male
+Ben | /bɛn/ | male
+Rob | /rɑb/ | male
+Peter | /ˈpitər/ | male
+Wilson | /ˈwɪlsən/ | male
+Silva | /ˈsɪlvə/ | male
+Miranda | /mɪˈrændə/ | female
+Mei Ling | /meɪ lɪŋ/ | female
+Rosa | /ˈroʊzə/ | female
+Matt | /mæt/ | male
+Mike | /maɪk/ | male
+Paolo | /ˈpaʊloʊ/ | male
+Rivera | /riˈvɛrə/ | male
+    </textarea>
     <div class="slides">
+      <section>
+        <h1>stress pattern</h1>
+      </section>
+      <section>
         <section>
-            <h2>I am a header</h2>
+          <h1>Stress pattern in Malagasy:</h1>
         </section>
-        <section>Horizontal Slide</section>
         <section>
-            <section>Vertical Slide 1</section>
-            <section>Vertical Slide 2</section>
+          <p class="fragment" data-fragment-index="2">/<span class="fragment highlight-green" data-fragment-index="3">1</span><span class="fragment highlight-red" data-fragment-index="4">0</span>/</p>
+          <p class="fragment" data-fragment-index="1"><span class="fragment highlight-green" data-fragment-index="3">Hi</span><span class="fragment highlight-red" data-fragment-index="4">ra</span></p>
+          <p class="fragment" data-fragment-index="5"><span class="fragment highlight-green" data-fragment-index="3">1 = Major Stress</span></p>
+          <p class="fragment" data-fragment-index="6"><span class="fragment highlight-red" data-fragment-index="3">0 = Unstressed</span></p>
         </section>
-        <section data-state="make-it-pop">Slide 2</section>
-        <!-- data-visibility="uncounted"-->
-        <section data-markdown>
-            <textarea data-template>
-                ## Slide 1
-                A paragraph with some text and a [link](http://hakim.se).
-                ---
-                ## slide 2
-                ---
-                ## slide 3
-            </textarea>
+        <section>
+          <p class="fragment" data-fragment-index="2">/<span class="fragment highlight-green" data-fragment-index="3">1</span><span class="fragment highlight-red" data-fragment-index="4">0</span><span class="fragment highlight-red" data-fragment-index="5">0</span>/</p>
+          <p class="fragment" data-fragment-index="1"><span class="fragment highlight-green" data-fragment-index="3">La</span><span class="fragment highlight-red" data-fragment-index="4">la</span><span class="fragment highlight-red" data-fragment-index="5">na</span></p>
         </section>
+        <section>
+          <p class="fragment" data-fragment-index="2">/<span class="fragment highlight-red" data-fragment-index="3">0</span><span class="fragment highlight-green" data-fragment-index="4">1</span><span class="fragment highlight-red" data-fragment-index="5">0</span>/</p>
+          <p class="fragment" data-fragment-index="1"><span class="fragment highlight-red" data-fragment-index="3">La</span><span class="fragment highlight-green" data-fragment-index="4">là</span><span class="fragment highlight-red" data-fragment-index="5">na</span></p>
+        </section>
+        <section>
+          <p class="fragment" data-fragment-index="2">/<span class="fragment highlight-blue" data-fragment-index="3">2</span><span class="fragment highlight-green" data-fragment-index="4">1</span>/</p>
+          <p class="fragment" data-fragment-index="1"><span class="fragment highlight-blue" data-fragment-index="3">Ma</span><span class="fragment highlight-green" data-fragment-index="4">ndà</span></p>
+          <p class="fragment" data-fragment-index="5"><span class="fragment highlight-blue" data-fragment-index="5">2 = Minor Stress</span></p>
+        </section>
+      </section>
+      <section>
+        <section>
+          <h1>Stress pattern</h1>
+        </section>
+        <section>
+          <img data-src="./assets/stress_pattern.png">
+        </section>
+      </section>
+      <section>
+        <section><h1>Stress pattern in pronunciation.</h1></section>
+        <section>
+          <p class="fragment" data-fragment-index="1">
+            <span class="d-flex justify-content-center align-items-center">
+              <span class="fragment highlight-green" data-fragment-index="5">pa</span>
+              <span class="fragment highlight-red" data-fragment-index="7">lace</span>
+              <span class="fragment" data-fragment-index="4">/<span class="fragment highlight-green" data-fragment-index="5">ˈ</span>p<span class="fragment highlight-green" data-fragment-index="6">æ</span>l<span class="fragment highlight-red" data-fragment-index="7">ə</span>s/</span>
+              <button class="fragment mx-5" data-fragment-index="7" (click)="listen('palace')">Listen</button>
+              <audio id="palace" class="mx-4" src="./assets/ewm_v_palace.mp3"></audio>
+            </span>
+          </p>
+          <p class="fragment" data-fragment-index="8">
+            <span class="d-flex justify-content-center align-items-center">
+              Stress Pattern =  <span class="fragment" data-fragment-index="9">/<span class="fragment highlight-green" data-fragment-index="10">1</span><span class="fragment highlight-red" data-fragment-index="11">0</span>/</span>
+              <button class="fragment mx-5" data-fragment-index="12" (click)="listen('10')">Listen</button>
+              <audio id="10" class="mx-4" src="./assets/ewm_english_10.mp3"></audio>
+            </span>
+          </p>
+          <p class="fragment" data-fragment-index="12">
+            <i class="fragment highlight-green" data-fragment-index="12">ˈ = 1 = Major Stress</i>
+          </p>
+          <p class="fragment" data-fragment-index="13">
+            <i class="fragment highlight-red" data-fragment-index="13">ə = 0 = Unstressed</i>
+          </p>
+          <p class="fragment" data-fragment-index="14">
+            <i class="fragment" data-fragment-index="14">ə : Schwa</i>
+          </p>
+        </section>
+        <section>
+          <p class="fragment" data-fragment-index="1">
+            <span class="d-flex justify-content-center align-items-center">
+              <span class="fragment highlight-green" data-fragment-index="4">con</span>
+              <span class="fragment highlight-blue" data-fragment-index="6">tact</span>
+              <span class="fragment" data-fragment-index="3">/<span class="fragment highlight-green" data-fragment-index="4">ˈ</span>k<span class="fragment highlight-green" data-fragment-index="5">ɑ</span>n<span class="fragment highlight-blue" data-fragment-index="6">ˌ</span>t<span class="fragment highlight-blue" data-fragment-index="7">æ</span>kt/</span>
+              <button class="fragment mx-5" data-fragment-index="7" (click)="listen('contact')">Listen</button>
+              <audio id="contact" class="mx-4" src="./assets/ewm_v_contact.mp3"></audio>
+            </span>
+          </p>
+          <p class="fragment" data-fragment-index="8">
+            <span class="d-flex justify-content-center align-items-center">
+              Stress Pattern =  <span class="fragment" data-fragment-index="9">/<span class="fragment highlight-green" data-fragment-index="10">1</span><span class="fragment highlight-blue" data-fragment-index="11">2</span>/</span>
+              <button class="fragment mx-5" data-fragment-index="12" (click)="listen('12')">Listen</button>
+              <audio id="12" class="mx-4" src="./assets/ewm_english_12.mp3"></audio>
+            </span>
+          </p>
+          <p class="fragment" data-fragment-index="13">
+            <i class="fragment highlight-blue" data-fragment-index="13">ˌ = 2 = Minor Stress</i>
+          </p>
+        </section>
+      </section>
+      <section>
+        <h1>Other stress pattern</h1>
+      </section>
+      <section *ngFor="let line of finalData">
+        <section>
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="fragment" data-fragment-index="1">/{{line.stressPattern}}/</p>
+            <button class="fragment mx-5" data-fragment-index="2" (click)="listen(line.stressPattern)">Listen</button>
+            <audio [id]="line.stressPattern" class="mx-4" src="./assets/ewm_english_{{line.stressPattern}}.mp3"></audio>
+          </div>
+          <div class="d-flex justify-content-center align-items-center">
+            <p class="fragment" data-fragment-index="4">{{line.phonetics}}</p>
+            <button class="fragment mx-5"  data-fragment-index="5" (click)="listen(line.word)">Listen</button>
+            <audio [id]="line.word" class="mx-4" src="./assets/ewm_v_{{line.word}}.mp3"></audio>
+          </div>
+          <p class="fragment" data-fragment-index="6">{{line.word}}</p>
+        </section>
+        <section>
+          <img data-src="./assets/ewm_v_{{line.word}}.jpg">
+        </section>
+      </section>
+      <section>
+        <h1>Stress Pattern Changes Meaning</h1>
+      </section>
+      <section *ngFor="let line of finalData2">
+        <div class="d-flex justify-content-center align-items-center" style="width: 100%">
+          <div class="mx-5">
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="no-wrap">{{line.word1 | underscoreToSpace}}</p>
+              <button class="mx-3" data-fragment-index="5" (click)="listen(line.word1)">Listen</button>
+            </div>
+            <p class="fragment">{{line.phonetics1}}</p>
+            <audio [id]="line.word1" class="mx-4" src="./assets/ewm_mp_{{line.word1}}.mp3"></audio>
+          </div>
+          <p class="mx-3 fragment">VS</p>
+          <div class="fragment mx-5">
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="no-wrap">{{line.word2 | underscoreToSpace}}</p>
+              <button class="mx-3"  data-fragment-index="5" (click)="listen(line.word2)">Listen</button>
+            </div>
+            <p class="fragment">{{line.phonetics2}}</p>
+            <audio [id]="line.word2" class="mx-4" src="./assets/ewm_mp_{{line.word2}}.mp3"></audio>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1>
+          English Names
+        </h1>
+      </section>
+      <section *ngFor="let line of finalData3">
+        <section>
+          <div class="fragment">{{line.name}}</div>
+          <div>{{line.phonetics}}</div>
+        </section>
+        <section>
+          <img *ngIf="line.gender == 'female'" src="./assets/female.jpg" alt="">
+          <img *ngIf="line.gender == 'male'" src="./assets/male.jpg" alt="">
+          <img *ngIf="line.gender == 'unisex'" src="./assets/unisex.jpg" alt="">
+        </section>
+      </section>
     </div>
 </div>

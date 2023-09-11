@@ -30,11 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
               "node_modules/reveal.js/dist/reveal.css",
-              "node_modules/reveal.js/dist/theme/black.css"
+              "node_modules/reveal.js/dist/theme/black.css",
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {
